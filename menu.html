@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="keywords" content="Sauvage, restaurant, Menu & Chefs, Reservacions, Contant"/>
+        <meta name="description" content="Welcome to sauvage restaurant. We offer you the best service, food, drinks and therefore the best experience."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Sauvage restaurant</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+        
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="css/responsive.css"/>
+        <link rel="icon" type="image/x-icon" href="img/logo.ico"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="Logo"/></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link active dropdown-toggle" href="#nav" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#nav">Main menu</a></li>
+                        <li><a class="dropdown-item" href="#deserts">Deserts</a></li>
+                        <li><a class="dropdown-item" href="#drinks">Card of drinks</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#chefs">Our chefs</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="reservations.html">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="author.html">Author</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          
+
+          
+          <section class="menu" id="menu">
+            <h2 class="text-center fst-italic mt-3">Main Menu</h2>
+            <div class="container-fluid modal-height">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-end" id="modal-blok">
+                        <button type="button" id="modaldugme" class="text-decoration-underline" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-circle-exclamation"></i>Important Prices Notice
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Important Prices Notice</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Prices include VAT.<br/>
+                                    Due to the irregularity of the market and frequent price changes, it may happen that some prices differ from those in the restaurant.  
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h4 class="text-center fst-italic mt-5">Soups</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Fish soup
+                        </div>
+                        <div class="price">
+                            7e
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Beef soup
+                        </div>
+                        <div class="price">
+                            9e
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-center fst-italic mt-5">Dishes to order</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Steak in pepper sauce / 320g
+                        </div>
+                        <div class="price">
+                            40e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Steak with egg / 320g
+                        </div>
+                        <div class="price">
+                            40e
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Steak with porcini mushrooms / 320g
+                        </div>
+                        <div class="price">
+                            45e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Steak Rossini / with mushrooms / 320g
+                        </div>
+                        <div class="price">
+                            40e
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Steak with porcini mushrooms / 320g
+                        </div>
+                        <div class="price">
+                            45e
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Medallions with mushrooms or cream
+                        </div>
+                        <div class="price">
+                            50e
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Steak in gorgonzola
+                        </div>
+                        <div class="price">
+                            45e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Saltiboka in the French way
+                        </div>
+                        <div class="price">
+                            50e
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Burger or kebabs on cream
+                        </div>
+                        <div class="price">
+                            15e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Gourmet burger
+                        </div>
+                        <div class="price">
+                            10e
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Leskovac Burger
+                        </div>
+                        <div class="price">
+                            10e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Grilled patties or kebabs
+                        </div>
+                        <div class="price">
+                            10e
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Chicken fillet, grilled
+                        </div>
+                        <div class="price">
+                            17e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Stuffed medallions
+                        </div>
+                        <div class="price">
+                            18e
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Chicken fillet in gorgonzola sauce or five cheeses
+
+                        </div>
+                        <div class="price">
+                            20e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Shanghai chicken / soy sauce, honey, peanuts, vegetables
+                        </div>
+                        <div class="price">
+                            25e
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Turkey fillet in sesame or as sticks
+
+                        </div>
+                        <div class="price">
+                            30e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Turkey fillet, grilled / rolled with bacon
+                        </div>
+                        <div class="price">
+                            35e
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-center fst-italic mt-5">Salads</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Caesar salad
+                        </div>
+                        <div class="price">
+                            15e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Caprese salad
+                        </div>
+                        <div class="price">
+                            15e
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Steak in green salads / cherries, parmesan
+                        </div>
+                        <div class="price">
+                            20e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Chicken fillet in green salads / pine nuts, cherries, parmesan
+                        </div>
+                        <div class="price">
+                            15e
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Turkey fillet in green salads / pine nuts, cherries, parmesan
+                        </div>
+                        <div class="price">
+                            10e
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Gambori on arugula, cherries, parmesan
+                        </div>
+                        <div class="price">
+                            25e
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <section class="deserts" id="deserts">
+            <div class="container">
+                <h2 class="text-center fst-italic mt-3">Deserts</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Chocolate cake
+                        </div>
+                        <div class="price">
+                            5e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Chocolate mousse
+                        </div>
+                        <div class="price">
+                            6e
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Chocolate Trilogy
+                        </div>
+                        <div class="price">
+                            9e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Warm chocolate cake
+                        </div>
+                        <div class="price">
+                            10e
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Ice cream, portion
+                        </div>
+                        <div class="price">
+                            4e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Pancakes in a chateau for two people
+                        </div>
+                        <div class="price">
+                            18e
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <section class="drinks" id="drinks">
+            <div class="container">
+                <h2 class="text-center fst-italic mt-3">Card of drinks</h2>
+                <h4 class="text-center fst-italic mt-5">Alcoholic beverages</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Stock, Vekija, 0.03
+                        </div>
+                        <div class="price">
+                            5e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Vinjak 5 Rubin, 0.03
+                        </div>
+                        <div class="price">
+                            5e
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Whiskey 12 years, Bourbon malt, 0.03
+                        </div>
+                        <div class="price">
+                            7e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Cognac VS, 0.03
+                        </div>
+                        <div class="price">
+                            10e
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-center fst-italic mt-5">Beer</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Heineken 0.25
+                        </div>
+                        <div class="price">
+                            6e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Birra Morreti 0.33
+                        </div>
+                        <div class="price">
+                            7e
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-center fst-italic mt-5">Non-alcoholic beverages</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            San Pellegrino, Panna classic, 0.75
+                        </div>
+                        <div class="price">
+                            4e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Coca Cola, Tonic, Bitter Lemon, 0.25
+                        </div>
+                        <div class="price">
+                            5e
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Lemonade - lemon, lime 0.25
+                        </div>
+                        <div class="price">
+                            3e
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6 col-12 d-flex justify-content-space-between">
+                        <div class="meal">
+                            Squeezed orange or grapefruit juice, 0.20
+                        </div>
+                        <div class="price">
+                            3e
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+          </section>
+
+          <section class="chefs" id="chefs">
+            <div class="container">
+                <h2 class="text-center fst-italic mt-3">Our chefs</h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center mb-3">
+                        <div class="card" style="width: 12rem;">
+                            <img src="img/chef1.jpg" class="card-img-top" alt="Chef 1">
+                            <div class="card-body">
+                              <h5 class="card-title">Marcus Nguyen</h5>
+                              <p class="card-text">Vietnamese tradition meets innovation; bold flavors, artistic presentations.</p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center mb-3">
+                        <div class="card" style="width: 12rem;">
+                            <img src="img/chef4.jpg" class="card-img-top" alt="Chef 4">
+                            <div class="card-body">
+                              <h5 class="card-title">Javier Morales</h5>
+                              <p class="card-text">Multicultural fusion; Indian, British flavors; harmonious, delightful culinary experience.</p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center mb-3">
+                        <div class="card" style="width: 12rem;">
+                            <img src="img/chef2.jpg" class="card-img-top" alt="Chef 2">
+                            <div class="card-body">
+                              <h5 class="card-title">Isabella Cortez</h5>
+                              <p class="card-text">Master of Spanish cuisine; paellas, tapas; fresh, authentic flavors.</p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center mb-3">
+                        <div class="card" style="width: 12rem;">
+                            <img src="img/chef3.jpg" class="card-img-top" alt="Chef 3">
+                            <div class="card-body">
+                              <h5 class="card-title">Rachel Patel</h5>
+                              <p class="card-text">Mexican heritage, contemporary flair; bold spices, creative plating.</p>
+                             
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>
+          </section>
+
+          <footer class="bg-light border-top">
+            <div class="container d-flex justify-content-space-between text-center p-4">
+              <div class="col-4 order2">
+                <a href="contact.html"><i class="fa-solid fa-location-dot"></i>633 10 STREET, CANMORE</a>
+              </div>
+              <div class="col-4 order1">
+                <a href="index.html"><img src="img/logo.svg" alt="Logo footer"/></a>
+              </div>
+              <div class="col-4 order3">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
+                <a href="sitemap.xml" target="_blank"><i class="fa-solid fa-sitemap"></i></a>
+                <a href="rss.xml" target="_blank"><i class="fa-solid fa-rss"></i></a>
+              </div>
+            </div>
+            <p class="text-center mb-0">All right Reserved &copy; Sauvage</p>
+          </footer>
+          <a href="#" class="arrow">
+            <div class="circle">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+        </a>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+            </script>
+    </body>
+</html>
